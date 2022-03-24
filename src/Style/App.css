@@ -10,7 +10,63 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .App {
-  margin: 0 auto;
-  max-width: 680px;
+  background-color: lightblue;
+  width: 450px;
+  min-height: 200px;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  font-family: 'Montserrat';
+}
+
+.quizz {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.question_section {
+  flex: 0 0 50%;
+}
+
+.question_count {
+  margin-bottom: 18px;
+}
+.question_count span {
+  font-size: 26px;
+}
+
+.question_text {
+  margin-bottom: 14px;
+}
+
+.answer_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  padding: 5px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: 2px solid rgba(31, 61, 78, 0.466);
+  border-radius: 16px;
+  cursor: pointer;
 }
